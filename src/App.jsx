@@ -1,6 +1,7 @@
 import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
+import { Logout } from "./Logout";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Content />
       <Footer />
+      <Logout />
     </div>
   );
 }
