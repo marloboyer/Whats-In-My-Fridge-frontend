@@ -4,7 +4,6 @@ import { ItemsIndex } from "./ItemsIndex";
 import { ItemsNew } from "./ItemsNew";
 import { ItemsShow } from "./ItemsShow";
 import { Modal } from "./Modal";
-const [items, setItems] = useState([]);
 
 export function Content() {
   const [items, setItems] = useState([]);
@@ -57,7 +56,7 @@ export function Content() {
 
   const handleDestroyItem = (item) => {
     console.log("handleDestroyItem", item);
-    axios.delete(`http://localhost:3000/items/${photo.id}.json`).then((response) => {
+    axios.delete(`http://localhost:3000/items/${item.id}.json`).then((response) => {
       setItems(items.filter((p) => p.id !== item.id));
       handleClose();
     });

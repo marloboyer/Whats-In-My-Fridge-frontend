@@ -16,7 +16,7 @@ export function ItemsShow(props) {
       <p>Best By: {props.item.best_by}</p>
       <p>Lives At: {props.item.lives_at}</p>
 
-      <form onSubmit={handleSumbit}>
+      <form onSubmit={handleSubmit}>
         <div>
           Name: <input defaultValue={props.item.name} name="name" type="text" />
         </div>
